@@ -1,0 +1,1 @@
+docker run --privileged --gpus '"all"' --shm-size 10g --rm -d -it --name axolotl --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -v /shared/storage-01/users/jvsingh2:/jvsingh2 axolotlai/axolotl:0.9.0
